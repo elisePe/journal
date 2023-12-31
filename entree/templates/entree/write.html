@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/c7a90175-f491-451b-9610-0e97565c6bb1/nuage.png?v=1702040732163"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.cdnfonts.com/css/bubbleboddy" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'entree/write.css' %}" />
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>write</title>
+
+    <!-- The website stylesheet -->
+
+
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="div1">
+      <h2 >     </h2>
+      <h1 >Créer un nouveau mot</h1>
+      <h3>   </h3>
+    </div>
+    <div class="div2">
+      <div class="text">
+        <form action="{% url 'write' idu %}" method="post" novalidate>
+           {% csrf_token %}
+           {{ form.as_p }}
+           <input class="sub" style="border-color: #f2e6e2; box-shadow: none " type="submit" value="Envoyer">
+        </form>
+        <h2>
+
+        </h2>
+        <button class="btr" style="border-color: #f2e6e2; box-shadow: none " onclick="window.location.href='{% url 'home' %}'; "> retour</button>
+      </div>
+    </div>
+  </body>
+

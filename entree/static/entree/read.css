@@ -1,0 +1,164 @@
+html {
+  height:100%;
+}
+body {
+  background-image: url("https://images5.alphacoders.com/132/1327980.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #d89484;
+  height: 100%;
+}
+
+.div1 {
+  background-color: #B97865;
+  height: 15%;
+  border-radius: 30px;
+  text-align: center;
+  margin: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5% 2em;
+}
+.btg{
+  align-self: center;
+
+  font-family: 'bubbleboddy', sans-serif;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: center;
+  cursor: pointer;
+  background: #f2e6e2;
+  border: 1px  #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #B97865;
+  white-space: nowrap;
+  display: block;
+  margin-left:80%;
+
+  /*width:20%;*/
+}
+
+
+h1 {
+  align-self: center;
+
+  color: #FFFFFFFF;
+  font-family: 'bubbleboddy', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  /*line-height: 4;*/}
+
+.btd{
+  align-self: center;
+
+  font-family: 'bubbleboddy', sans-serif;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: center;
+  cursor: pointer;
+  background: #f2e6e2;
+  border: 1px  #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #B97865;
+  white-space: nowrap;
+  display: block;
+
+  margin-right:80%;
+
+}
+
+.btmd{
+  align-self: center;
+
+  font-family: 'bubbleboddy', sans-serif;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: center;
+  cursor: pointer;
+  background: #f2e6e2 ;
+  border: 1px  #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #B97865;
+  white-space: nowrap;
+  display: block;
+
+  margin-right:80%;
+
+}
+
+.btmg{
+  align-self: center;
+
+  font-family: 'bubbleboddy', sans-serif;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: center;
+  cursor: pointer;
+  background: #B97865 ;
+  border: 1px  #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #B97865;
+  white-space: nowrap;
+  display: block;
+
+  margin-left:80%;
+
+}
+
+.div2 {
+  background-color: #f2e6e2;
+  height: 75%;
+  border-radius: 30px;
+  text-align: center;
+  margin: 1% 3%;
+  justify-content:center;
+
+}
+
+.text{
+  height:100%;
+  with:100%;
+  background-color:#00000000;
+  text-align: center;
+  padding: 1em;
+
+
+}
+
+.entree{
+  color: #B97865;
+  font-family: 'bubbleboddy', sans-serif;
+  font-style: normal;
+
+  line-height: 3em;
+  font-size: 19px;
+}
+
+

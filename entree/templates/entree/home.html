@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/c7a90175-f491-451b-9610-0e97565c6bb1/nuage.png?v=1702040732163"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.cdnfonts.com/css/bubbleboddy" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'entree/home.css' %}" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Journaling</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/home.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <div class="floating">
+          <h1 class="title">Journal</h1>
+        </div>
+
+        <a
+        class="btn--remix"
+        target="_top"
+        href="{% url 'log'  %}">
+          log in</a>
+
+        <h2></h2>
+        <a
+        class="btn--remix"
+        target="_top"
+        href="{% url 'sign'  %}">
+          sign in</a>
+
+
+      </div>
+    </div>
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+
+  </body>
+</html>

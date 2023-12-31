@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!--
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://banner2.cleanpng.com/20191211/uzw/transparent-cloud-icon-ui-icon-5df0aa87653353.6009784215760533834145.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.cdnfonts.com/css/bubbleboddy" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'entree/read.css' %}" />
+
+
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>read</title>
+
+    <!-- The website stylesheet -->
+
+
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="div1">
+      {% if av %}
+        <button class="btg" onclick="window.location.href='{% url 'read' idu idm %}';">
+          &lt
+        </button>
+      {% else %}
+        <button class="btmg">
+
+        </button>
+      {% endif %}
+
+
+
+      <h1>
+        {{ en.date }}
+      </h1>
+
+      {% if ap %}
+        <button class="btd" onclick="window.location.href='{% url 'read' idu idp %}';" >
+          &gt
+        </button>
+      {% else %}
+        <button class="btd" onclick="window.location.href='{% url 'write' idu  %}'; ">
+          &#128395
+        </button>
+      {% endif %}
+    </div>
+    <div class="div2">
+       <div class="text">
+        <p class="entree">
+          {{en.texte}}
+        </p>
+      </div>
+
+    </div>
+
+   </body>
+</html>
